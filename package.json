@@ -1,0 +1,36 @@
+{
+  "name": "new_ldtree_browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.test.ts --timeout 100000",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  },
+  "author": "Ruben Dedecker",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/jest": "^24.0.18",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "@dexagod/string_normalizer": "^1.0.0",
+    "@types/jsonld": "^1.5.0",
+    "@types/n3": "^1.1.1",
+    "axios": "^0.19.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsonld": "^1.8.1",
+    "ld-query": "^2.0.0",
+    "ldfetch": "^1.1.2",
+    "ldtree": "file:../combinedTrees",
+    "n3": "^1.2.1",
+    "rdf-framing": "file:../linkedDataFraming",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
